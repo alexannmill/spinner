@@ -1,12 +1,12 @@
 
-let interval = 0
-let spinner = ['| ', '/', '-', '\\', '|', '/', '-', '\\']
+let interval = 0;
+let spinner = ['| ', '/', '-', '\\', '|', '/', '-', '\\'];
 
 for (const rota of spinner) {
   setTimeout(() => {
-    process.stdout.write(`\r ${rota} `)
+    process.stdout.write(`\r ${rota} `);
   }, interval);
-  interval += 200
+  interval += 200;
 }
 
 setTimeout(() => {
